@@ -107,7 +107,8 @@ ul {
 ======================================== */
 .hero {
   position: relative;
-  height: 100vh;
+  height: 60vh;
+  margin-top: 60px;
   background-image: url("../images/main-hero.png");
   background-size: cover;
   background-position: center;
