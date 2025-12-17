@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ワークス村上 | 鉄工所</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="header-inner">
+      <h1 class="logo">ワークス村上</h1>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#about">私たちについて</a></li>
+          <li><a href="#services">サービス</a></li>
+          <li><a href="#works">施工事例</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- セクション1: ヒーロー -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h2 class="hero-title">鉄と共に、50年。</h2>
+      <p class="hero-subtitle">確かな技術と信頼で、お客様のご要望にお応えします。</p>
+    </div>
+  </section>
+
+  <!-- セクション2: 私たちについて -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">私たちについて</h2>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="images/profile.png" alt="代表プロフィール">
+        </div>
+        <div class="about-text">
+          <h3>職人の技と心を込めて</h3>
+          <p>ワークス村上は、創業以来50年にわたり、鉄工一筋で歩んでまいりました。熟練の職人が一つひとつ丁寧に仕上げる製品は、多くのお客様にご満足いただいております。</p>
+          <p>小さな部品から大型構造物まで、お客様のニーズに合わせた柔軟な対応を心がけております。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- セクション3: サービス -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="section-title">サービス</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-image">
+            <img src="images/forge-fire.png" alt="溶接・加工">
+          </div>
+          <h3>溶接・加工</h3>
+          <p>アーク溶接、TIG溶接など各種溶接に対応。精密な加工技術で高品質な製品をお届けします。</p>
+        </div>
+        <div class="service-card">
+          <div class="service-image">
+            <img src="images/tools.png" alt="製作・組立">
+          </div>
+          <h3>製作・組立</h3>
+          <p>図面からの製作はもちろん、お客様のアイデアを形にするオーダーメイドにも対応いたします。</p>
+        </div>
+        <div class="service-card">
+          <div class="service-image">
+            <img src="images/workshop.png" alt="修理・メンテナンス">
+          </div>
+          <h3>修理・メンテナンス</h3>
+          <p>既存設備の修理や定期メンテナンスも承ります。迅速な対応でダウンタイムを最小限に。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- セクション4: 施工事例 -->
+  <section id="works" class="works">
+    <div class="container">
+      <h2 class="section-title">施工事例</h2>
+      <div class="works-grid">
+        <div class="work-item">
+          <img src="images/work-nameplate.png" alt="銘板製作">
+          <div class="work-overlay">
+            <h3>銘板製作</h3>
+          </div>
+        </div>
+        <div class="work-item">
+          <img src="images/work-measure.png" alt="計測機器部品">
+          <div class="work-overlay">
+            <h3>計測機器部品</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- セクション5: お問い合わせ -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">お問い合わせ</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <h3>所在地</h3>
+            <p>〒000-0000<br>東京都○○区○○町1-2-3</p>
+          </div>
+          <div class="contact-item">
+            <h3>電話番号</h3>
+            <p>03-0000-0000</p>
+          </div>
+          <div class="contact-item">
+            <h3>営業時間</h3>
+            <p>平日 8:00〜17:00<br>土日祝 休業</p>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form>
+            <div class="form-group">
+              <label for="name">お名前</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">メールアドレス</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">お問い合わせ内容</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">送信する</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <p>&copy; 2024 ワークス村上 All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
