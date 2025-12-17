@@ -113,8 +113,8 @@ ul {
   background-size: cover;
   background-position: center;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: flex-start;
   border-radius: 4px;
   overflow: hidden;
 }
@@ -130,22 +130,33 @@ ul {
 
 .hero-content {
   position: relative;
-  text-align: center;
+  text-align: left;
   color: #ffffff;
   z-index: 1;
+  padding: 40px;
 }
 
 .hero-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
-  letter-spacing: 0.15em;
-  margin-bottom: 20px;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  margin-bottom: 15px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-subtitle {
   font-size: 1.2rem;
   letter-spacing: 0.1em;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero-description {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+  opacity: 0.85;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -444,13 +455,20 @@ ul {
     gap: 20px;
   }
 
+  .hero-content {
+    padding: 25px;
+  }
+
   .hero-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .hero-subtitle {
     font-size: 1rem;
-    padding: 0 20px;
+  }
+
+  .hero-description {
+    font-size: 0.85rem;
   }
 
   .about-content {
