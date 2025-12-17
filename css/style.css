@@ -37,9 +37,8 @@ ul {
 }
 
 .container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: 0 5%;
+  padding: 0;
 }
 
 /* ========================================
@@ -181,7 +180,7 @@ ul {
 .section-title::after {
   content: "";
   display: block;
-  width: 60px;
+  width: 150px;
   height: 3px;
   background-color: #4a4a4a;
   margin: 15px auto 0;
@@ -198,11 +197,11 @@ ul {
 .about-content {
   display: flex;
   gap: 50px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .about-image {
-  flex: 0 0 350px;
+  flex: 0 0 245px;
 }
 
 .about-image img {
