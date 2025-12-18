@@ -26,20 +26,70 @@
   <section class="consultation-page">
     <div class="container">
       <h2 class="section-title">ご相談フォーム</h2>
+      
       <div class="consultation-form-wrapper">
+        <!-- 冒頭メッセージ -->
+        <p class="consultation-intro">「こんなの作れる？」から始めましょう。日用品でもアートでも、まずはお気軽に</p>
+        
+        <!-- 素材参考表 -->
+        <div class="material-reference">
+          <p class="reference-note">参考までに。わからなければ飛ばしてOKです</p>
+          <table class="material-table">
+            <thead>
+              <tr>
+                <th>素材</th>
+                <th>特徴</th>
+                <th>用途例</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>鉄・鋼</td>
+                <td>強い、重厚感</td>
+                <td>表札、門扉、看板</td>
+              </tr>
+              <tr>
+                <td>ステンレス</td>
+                <td>錆びにくい</td>
+                <td>屋外もの、水まわり</td>
+              </tr>
+              <tr>
+                <td>真鍮・銅</td>
+                <td>味が出る</td>
+                <td>装飾、インテリア</td>
+              </tr>
+              <tr>
+                <td>わからない</td>
+                <td>それでOK</td>
+                <td>ご相談ください</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <form class="consultation-form">
+          <!-- 何を作りたいか -->
           <div class="form-group">
-            <label for="consultation">ご相談内容</label>
-            <p class="form-description">納期や気になることがあれば教えてください</p>
-            <textarea id="consultation" name="consultation" rows="10" required></textarea>
+            <label for="product">何を作りたいですか？</label>
+            <input type="text" id="product" name="product" placeholder="例：表札、棚受け、オブジェ など">
           </div>
 
+          <!-- 大きさのイメージ -->
           <div class="form-group">
-            <label class="checkbox-group-label">素材の種類</label>
+            <label for="size">大きさのイメージ</label>
+            <input type="text" id="size" name="size" placeholder="例：手のひらサイズ、30cm四方 など">
+          </div>
+
+          <!-- チェックボックス説明 -->
+          <p class="checkbox-intro">わかる範囲で構いません。あとで一緒に詰めましょう。<br>まずはお気軽に選択してみてください。</p>
+
+          <!-- 金属の種類 -->
+          <div class="form-group">
+            <label class="checkbox-group-label">金属の種類</label>
             <div class="checkbox-group">
               <label class="checkbox-item">
                 <input type="checkbox" name="material" value="iron">
-                <span>鉄鋼材</span>
+                <span>鉄などの汎用素材</span>
               </label>
               <label class="checkbox-item">
                 <input type="checkbox" name="material" value="strong-steel">
@@ -72,6 +122,7 @@
             </div>
           </div>
 
+          <!-- 加工の種類 -->
           <div class="form-group">
             <label class="checkbox-group-label">加工の種類</label>
             <div class="checkbox-group">
@@ -94,6 +145,7 @@
             </div>
           </div>
 
+          <!-- 設置など -->
           <div class="form-group">
             <label class="checkbox-group-label">設置など</label>
             <div class="checkbox-group">
@@ -116,9 +168,17 @@
             </div>
           </div>
 
+          <!-- 補足 -->
           <div class="form-group">
             <label for="supplement">補足があれば何でも</label>
             <textarea id="supplement" name="supplement" rows="4"></textarea>
+          </div>
+
+          <!-- ご相談内容 -->
+          <div class="form-group">
+            <label for="consultation">ご相談内容全般、何でもお書きください</label>
+            <textarea id="consultation" name="consultation" rows="8"></textarea>
+            <p class="form-hint">納期や気になることがあれば教えてください</p>
           </div>
 
           <h3 class="form-section-title">お客様情報</h3>
@@ -130,7 +190,7 @@
 
           <div class="form-group">
             <label for="tel">電話番号</label>
-            <input type="tel" id="tel" name="tel" required>
+            <input type="tel" id="tel" name="tel">
           </div>
 
           <div class="form-group">
@@ -139,7 +199,7 @@
           </div>
 
           <div class="form-submit">
-            <button type="submit" class="btn btn-primary">送信する</button>
+            <button type="submit" class="btn btn-primary">送信実行</button>
           </div>
 
           <p class="form-note">確認でき次第、まずはご連絡いたします</p>

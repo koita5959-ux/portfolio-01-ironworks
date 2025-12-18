@@ -491,6 +491,82 @@ ul {
   margin-bottom: 10px;
 }
 
+/* 相談フォーム冒頭 */
+.consultation-intro {
+  font-size: 1.1rem;
+  color: #2c2c2c;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+/* 素材参考表 */
+.material-reference {
+  margin-bottom: 35px;
+}
+
+.reference-note {
+  font-size: 0.85rem;
+  color: #6a6a6a;
+  margin-bottom: 12px;
+}
+
+.material-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #d0d0d0;
+  font-size: 0.9rem;
+}
+
+.material-table th,
+.material-table td {
+  border: 1px solid #d0d0d0;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.material-table thead tr {
+  background-color: #4a4a4a;
+}
+
+.material-table th {
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.material-table tbody tr {
+  background-color: #ffffff;
+  transition: background-color 0.2s ease;
+}
+
+.material-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.material-table tbody tr:last-child {
+  background-color: #f0f7ff;
+}
+
+.material-table tbody tr:last-child:hover {
+  background-color: #e5f0fa;
+}
+
+/* チェックボックス説明文 */
+.checkbox-intro {
+  font-size: 0.9rem;
+  color: #6a6a6a;
+  margin-bottom: 25px;
+  line-height: 1.8;
+}
+
+/* フォームヒント */
+.form-hint {
+  font-size: 0.85rem;
+  color: #6a6a6a;
+  margin-top: 8px;
+}
+
 .checkbox-group-label {
   display: block;
   color: #1a1a1a;
