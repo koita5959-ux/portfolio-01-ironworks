@@ -437,17 +437,14 @@ ul {
 ======================================== */
 .consultation-page {
   padding: 120px 0 80px;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   min-height: calc(100vh - 90px);
 }
 
 .consultation-form-wrapper {
   max-width: 600px;
   margin: 0 auto;
-  background-color: #ffffff;
-  padding: 40px;
-  border-radius: 5px;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px;
 }
 
 .consultation-form .form-group {
@@ -460,6 +457,7 @@ ul {
   margin-bottom: 8px;
   font-size: 0.95rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .consultation-form .form-group input,
@@ -509,6 +507,7 @@ ul {
   font-size: 0.85rem;
   color: #6a6a6a;
   margin-bottom: 12px;
+  text-align: center;
 }
 
 .material-table {
@@ -558,6 +557,7 @@ ul {
   color: #6a6a6a;
   margin-bottom: 25px;
   line-height: 1.8;
+  text-align: center;
 }
 
 /* フォームヒント */
@@ -565,6 +565,7 @@ ul {
   font-size: 0.85rem;
   color: #6a6a6a;
   margin-top: 8px;
+  text-align: center;
 }
 
 .checkbox-group-label {
@@ -573,6 +574,7 @@ ul {
   margin-bottom: 12px;
   font-size: 0.95rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .checkbox-group {
@@ -610,7 +612,8 @@ ul {
   color: #1a1a1a;
   margin: 35px 0 20px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: center;
 }
 
 .form-submit {
@@ -796,11 +799,106 @@ ul {
 
   .consultation-form-wrapper,
   .contact-form-wrapper {
-    padding: 25px;
+    max-width: 100%;
+    padding: 20px;
   }
 
   .consultation-page,
   .contact-page {
     padding: 100px 0 60px;
+  }
+
+  .material-table {
+    font-size: 0.85rem;
+  }
+
+  .material-table th,
+  .material-table td {
+    padding: 10px 12px;
+  }
+}
+
+/* スマートフォン対応 */
+@media (max-width: 480px) {
+  .consultation-page,
+  .contact-page {
+    padding: 80px 0 40px;
+  }
+
+  .consultation-form-wrapper,
+  .contact-form-wrapper {
+    padding: 15px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .consultation-intro {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+
+  /* 素材表をスクロール可能に */
+  .material-reference {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .material-table {
+    font-size: 0.8rem;
+    min-width: 320px;
+  }
+
+  .material-table th,
+  .material-table td {
+    padding: 8px 10px;
+    white-space: nowrap;
+  }
+
+  /* チェックボックスを縦1列に */
+  .checkbox-group {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .checkbox-item {
+    font-size: 0.9rem;
+  }
+
+  .checkbox-intro {
+    font-size: 0.85rem;
+  }
+
+  /* 入力欄 */
+  .consultation-form .form-group input,
+  .consultation-form .form-group textarea {
+    font-size: 16px; /* iOS拡大防止 */
+    padding: 14px 12px;
+  }
+
+  .consultation-form .form-group label {
+    font-size: 0.9rem;
+  }
+
+  /* ボタンを幅100%に */
+  .form-submit {
+    margin-top: 35px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    padding: 16px 20px;
+    font-size: 1rem;
+  }
+
+  .form-note {
+    font-size: 0.85rem;
+    margin-top: 20px;
+  }
+
+  .form-section-title {
+    font-size: 1rem;
+    margin: 30px 0 15px;
   }
 }
