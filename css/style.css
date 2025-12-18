@@ -491,6 +491,44 @@ ul {
   margin-bottom: 10px;
 }
 
+.checkbox-group-label {
+  display: block;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #4a4a4a;
+}
+
+.checkbox-item input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  cursor: pointer;
+  accent-color: #2c2c2c;
+}
+
+.checkbox-item span {
+  transition: color 0.2s ease;
+}
+
+.checkbox-item:hover span {
+  color: #1a1a1a;
+}
+
 .form-section-title {
   font-size: 1.1rem;
   color: #1a1a1a;
