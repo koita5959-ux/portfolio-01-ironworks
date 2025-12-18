@@ -433,6 +433,169 @@ ul {
 }
 
 /* ========================================
+   ご相談フォームページ
+======================================== */
+.consultation-page {
+  padding: 120px 0 80px;
+  background-color: #f5f5f5;
+  min-height: calc(100vh - 90px);
+}
+
+.consultation-form-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.consultation-form .form-group {
+  margin-bottom: 25px;
+}
+
+.consultation-form .form-group label {
+  display: block;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+.consultation-form .form-group input,
+.consultation-form .form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #d0d0d0;
+  border-radius: 3px;
+  background-color: #ffffff;
+  color: #2c2c2c;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.consultation-form .form-group input:focus,
+.consultation-form .form-group textarea:focus {
+  outline: none;
+  border-color: #4a4a4a;
+}
+
+.consultation-form .form-group textarea {
+  resize: vertical;
+  min-height: 200px;
+}
+
+.form-description {
+  font-size: 0.85rem;
+  color: #6a6a6a;
+  margin-bottom: 10px;
+}
+
+.form-section-title {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  margin: 35px 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.form-submit {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn-primary {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #4a4a4a;
+  color: #ffffff;
+}
+
+.form-note {
+  text-align: center;
+  color: #6a6a6a;
+  font-size: 0.9rem;
+  margin-top: 25px;
+}
+
+/* ========================================
+   お問い合わせフォームページ
+======================================== */
+.contact-page {
+  padding: 120px 0 80px;
+  background-color: #f5f5f5;
+  min-height: calc(100vh - 90px);
+}
+
+.contact-form-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-page .form-group {
+  margin-bottom: 25px;
+}
+
+.contact-form-page .form-group label {
+  display: block;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+.contact-form-page .form-group input,
+.contact-form-page .form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #d0d0d0;
+  border-radius: 3px;
+  background-color: #ffffff;
+  color: #2c2c2c;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form-page .form-group input:focus,
+.contact-form-page .form-group textarea:focus {
+  outline: none;
+  border-color: #4a4a4a;
+}
+
+.contact-form-page .form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* ========================================
+   お問い合わせボタングループ
+======================================== */
+.contact-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.btn-outline:hover {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+/* ========================================
    フッター
 ======================================== */
 .footer {
@@ -500,5 +663,26 @@ ul {
 
   .contact-info {
     flex: none;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-buttons .btn {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+
+  .consultation-form-wrapper,
+  .contact-form-wrapper {
+    padding: 25px;
+  }
+
+  .consultation-page,
+  .contact-page {
+    padding: 100px 0 60px;
   }
 }
