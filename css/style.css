@@ -1414,6 +1414,54 @@ ul {
 }
 
 /* ========================================
+   インフォメーションセクション
+======================================== */
+.info-section {
+  padding: 80px 0;
+  background-color: #f5f5f5;
+}
+
+.info-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 50px 40px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+.info-icon {
+  color: #4a4a4a;
+  margin-bottom: 25px;
+}
+
+.info-text {
+  margin-bottom: 30px;
+}
+
+.info-text p {
+  font-size: 1rem;
+  color: #4a4a4a;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.info-highlight {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  font-weight: bold;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.info-cta {
+  margin-top: 10px;
+}
+
+/* ========================================
    レスポンシブ対応
 ======================================== */
 @media (max-width: 768px) {
