@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>カート | ワークス村上</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="header-inner">
+      <h1 class="logo"><a href="index.html">ワークス村上</a></h1>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html#about">私たちについて</a></li>
+          <li><a href="process.html">制作工程</a></li>
+          <li><a href="catalog.html">製品カタログ</a></li>
+          <li><a href="index.html#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <a href="cart.html" class="cart-link active">
+        カート(<span id="cart-count">0</span>)
+      </a>
+    </div>
+  </header>
+
+  <!-- ページタイトル -->
+  <section class="page-hero">
+    <h2 class="page-title">カート</h2>
+    <p class="page-subtitle">ご注文内容をご確認ください</p>
+  </section>
+
+  <!-- カート内容 -->
+  <section class="cart-section">
+    <div class="container">
+      <!-- カートが空の場合 -->
+      <div class="cart-empty" id="cart-empty">
+        <p>カートに商品がありません</p>
+        <a href="catalog.html" class="btn btn-primary">製品カタログを見る</a>
+      </div>
+
+      <!-- カートに商品がある場合 -->
+      <div class="cart-content" id="cart-content" style="display: none;">
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>商品</th>
+              <th>単価</th>
+              <th>数量</th>
+              <th>小計</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="cart-items">
+            <!-- JavaScriptで動的に追加 -->
+          </tbody>
+        </table>
+
+        <div class="cart-summary">
+          <div class="cart-total">
+            <span>合計（税込）</span>
+            <span id="cart-total-price">¥0</span>
+          </div>
+          <p class="cart-note">※ 価格は参考価格です。正式なお見積りは別途ご連絡いたします。</p>
+        </div>
+
+        <div class="cart-actions">
+          <a href="catalog.html" class="btn btn-outline">買い物を続ける</a>
+          <a href="order.html" class="btn btn-primary">注文手続きへ</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <p>&copy; 2024 ワークス村上 All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>
