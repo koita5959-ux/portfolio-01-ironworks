@@ -970,6 +970,15 @@ ul {
 .btn-cart {
   padding: 10px 25px;
   font-size: 0.9rem;
+  background-color: transparent;
+  color: #4a4a4a;
+  border: 2px solid #4a4a4a;
+  border-radius: 5px;
+}
+
+.btn-cart:hover {
+  background-color: #4a4a4a;
+  color: #ffffff;
 }
 
 /* ========================================
