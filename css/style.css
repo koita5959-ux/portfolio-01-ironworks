@@ -785,8 +785,111 @@ ul {
 }
 
 /* ========================================
-   制作工程ページ
+   制作工程ページ - イントロ
 ======================================== */
+.process-intro {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.process-intro-text {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.process-intro-text p {
+  font-size: 1.1rem;
+  color: #4a4a4a;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.process-intro-text .intro-lead {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+}
+
+.process-intro-text .intro-closing {
+  font-size: 1rem;
+  color: #6a6a6a;
+  font-style: italic;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* ========================================
+   制作工程ページ - タイムライン
+======================================== */
+.process-section-alt {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+.process-timeline {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.process-row {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 60px;
+}
+
+.process-row:last-child {
+  margin-bottom: 0;
+}
+
+.process-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.process-image-alt {
+  flex: 0 0 45%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.process-image-alt img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+.process-content {
+  flex: 1;
+}
+
+.process-num {
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e0e0e0;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+
+.process-content h3 {
+  font-size: 1.4rem;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  letter-spacing: 0.05em;
+}
+
+.process-content p {
+  font-size: 1rem;
+  color: #4a4a4a;
+  line-height: 1.8;
+}
+
+/* 旧スタイル（互換性のため残す） */
 .process-section {
   padding: 80px 0;
   background-color: #f9f9f9;
@@ -1502,6 +1605,34 @@ ul {
 
   .services-grid {
     grid-template-columns: 1fr;
+  }
+
+  /* 制作工程ページ レスポンシブ */
+  .process-row,
+  .process-row.reverse {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .process-image-alt {
+    flex: none;
+    width: 100%;
+  }
+
+  .process-image-alt img {
+    height: 220px;
+  }
+
+  .process-num {
+    font-size: 2rem;
+  }
+
+  .process-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .process-intro-text .intro-lead {
+    font-size: 1.3rem;
   }
 
   .works-grid {
