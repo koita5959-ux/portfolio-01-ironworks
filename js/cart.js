@@ -50,9 +50,19 @@ const Cart = {
     this.updateCartCount();
   },
 
-  // 合計金額を計算
-  getTotal() {
+  // 小計を計算（税抜）
+  getSubtotal() {
     return this.getItems().reduce((sum, item) => sum + item.price * item.quantity, 0);
+  },
+
+  // 消費税を計算（10%）
+  getTax() {
+    return Math.floor(this.getSubtotal() * 0.1);
+  },
+
+  // 合計金額を計算（税込）
+  getTotal() {
+    return this.getSubtotal() + this.getTax();
   },
 
   // 商品数を計算
@@ -137,9 +147,14 @@ function renderCartPage() {
     </tr>
   `).join('');
 
-  if (totalEl) {
-    totalEl.textContent = Cart.formatPrice(Cart.getTotal());
-  }
+  // 金額計算を更新
+  const subtotalEl = document.getElementById('cart-subtotal');
+  const taxEl = document.getElementById('cart-tax');
+  const totalEl = document.getElementById('cart-total-price');
+
+  if (subtotalEl) subtotalEl.textContent = Cart.formatPrice(Cart.getSubtotal());
+  if (taxEl) taxEl.textContent = Cart.formatPrice(Cart.getTax());
+  if (totalEl) totalEl.textContent = Cart.formatPrice(Cart.getTotal());
 }
 
 // 数量更新
@@ -180,9 +195,14 @@ function renderOrderPage() {
     </div>
   `).join('');
 
-  if (totalEl) {
-    totalEl.textContent = Cart.formatPrice(Cart.getTotal());
-  }
+  // 金額計算を更新
+  const subtotalEl = document.getElementById('order-subtotal');
+  const taxEl = document.getElementById('order-tax');
+  const totalEl = document.getElementById('order-total-price');
+
+  if (subtotalEl) subtotalEl.textContent = Cart.formatPrice(Cart.getSubtotal());
+  if (taxEl) taxEl.textContent = Cart.formatPrice(Cart.getTax());
+  if (totalEl) totalEl.textContent = Cart.formatPrice(Cart.getTotal());
 
   // 法人/個人の切り替え
   const customerTypeRadios = document.querySelectorAll('input[name="customer-type"]');

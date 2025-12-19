@@ -37,9 +37,18 @@
       <div class="order-layout">
         <!-- 注文内容確認 -->
         <div class="order-summary">
+          <a href="cart.html" class="back-link">← カートに戻る</a>
           <h3>ご注文内容</h3>
           <div class="order-items" id="order-items">
             <!-- JavaScriptで動的に追加 -->
+          </div>
+          <div class="order-summary-row">
+            <span>小計</span>
+            <span id="order-subtotal">¥0</span>
+          </div>
+          <div class="order-summary-row">
+            <span>消費税（10%）</span>
+            <span id="order-tax">¥0</span>
           </div>
           <div class="order-total">
             <span>合計（税込）</span>
