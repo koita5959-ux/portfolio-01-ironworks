@@ -118,7 +118,6 @@ function renderCartPage() {
   const emptyEl = document.getElementById('cart-empty');
   const contentEl = document.getElementById('cart-content');
   const itemsEl = document.getElementById('cart-items');
-  const totalEl = document.getElementById('cart-total-price');
 
   if (!itemsEl) return;
 
@@ -177,7 +176,6 @@ function removeCartItem(id) {
 function renderOrderPage() {
   const items = Cart.getItems();
   const itemsEl = document.getElementById('order-items');
-  const totalEl = document.getElementById('order-total-price');
 
   if (!itemsEl) return;
 
