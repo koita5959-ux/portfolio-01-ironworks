@@ -1151,11 +1151,17 @@ ul {
   background-color: #f9f9f9;
 }
 
+.catalog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
 .catalog-tabs {
   display: flex;
   gap: 15px;
-  justify-content: center;
-  margin-bottom: 40px;
 }
 
 .tab-btn {
@@ -1183,9 +1189,7 @@ ul {
 
 .catalog-actions {
   display: flex;
-  justify-content: flex-end;
   gap: 10px;
-  margin-bottom: 30px;
 }
 
 .btn-cart-link,
@@ -1970,14 +1974,24 @@ button.btn-order-outline:hover,
     margin-top: 10px;
   }
 
+  .catalog-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
   .catalog-tabs {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   .tab-btn {
     width: 100%;
     max-width: 280px;
+  }
+
+  .catalog-actions {
+    justify-content: center;
   }
 
   .order-layout {
