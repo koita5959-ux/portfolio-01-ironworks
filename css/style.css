@@ -1441,23 +1441,26 @@ ul {
   margin-top: 40px;
 }
 
-.btn-order-outline {
+.btn-order-outline,
+button.btn-order-outline {
   display: inline-block;
   padding: 16px 40px;
   font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  background-color: #ffffff;
-  color: #666;
-  border: 1px solid #999;
+  background-color: #ffffff !important;
+  color: #666 !important;
+  border: 1px solid #999 !important;
   border-radius: 4px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .btn-order-outline:hover,
-button.btn-order-outline:hover {
+button.btn-order-outline:hover,
+.form-actions .btn-order-outline:hover,
+.form-actions button.btn-order-outline:hover {
   background-color: #1a1a1a !important;
   color: #ffffff !important;
   border-color: #1a1a1a !important;
