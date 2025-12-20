@@ -292,6 +292,25 @@ ul {
   background-color: #ffffff;
 }
 
+.works-description {
+  text-align: center;
+  color: #4a4a4a;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.works-image {
+  text-align: center;
+}
+
+.works-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
 .works-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
