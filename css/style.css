@@ -1456,7 +1456,8 @@ ul {
   transition: all 0.3s ease;
 }
 
-.btn-order-outline:hover {
+.btn-order-outline:hover,
+button.btn-order-outline:hover {
   background-color: #1a1a1a !important;
   color: #ffffff !important;
   border-color: #1a1a1a !important;
