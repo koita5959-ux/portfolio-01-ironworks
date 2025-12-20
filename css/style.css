@@ -305,7 +305,7 @@ ul {
   background-color: #ffffff;
   border: 4px solid #cccccc;
   border-radius: 15px;
-  padding: 80px;
+  padding: 100px;
 }
 
 .works-description {
@@ -338,7 +338,7 @@ ul {
 .work-block {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 0;
   margin-bottom: 60px;
 }
 
