@@ -1389,14 +1389,16 @@ ul {
 
 .checkbox-label {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   cursor: pointer;
   font-size: 0.9rem;
   color: #4a4a4a;
 }
 
 .checkbox-label input {
+  flex-shrink: 0;
   margin-right: 8px;
+  margin-top: 3px;
   accent-color: #2c2c2c;
 }
 
