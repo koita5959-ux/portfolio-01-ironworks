@@ -296,9 +296,9 @@ ul {
 
 .works-box {
   background-color: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 40px;
+  border: 4px solid #cccccc;
+  border-radius: 15px;
+  padding: 60px;
 }
 
 .works-description {
@@ -341,8 +341,9 @@ ul {
 }
 
 .work-block-image img {
-  width: 100%;
-  height: auto;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
   border-radius: 5px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
