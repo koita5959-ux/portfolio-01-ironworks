@@ -295,7 +295,7 @@ ul {
 }
 
 .works-subtitle {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   text-align: center;
   margin-bottom: 40px;
   color: #4a4a4a;
@@ -338,7 +338,7 @@ ul {
 .work-block {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   margin-bottom: 60px;
 }
 
