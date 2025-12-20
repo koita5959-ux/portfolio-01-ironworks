@@ -810,6 +810,7 @@ ul {
 .footer-inner {
   max-width: 1000px;
   margin: 0 auto;
+  padding-left: 80px;
   display: flex;
   gap: 60px;
 }
@@ -1964,6 +1965,7 @@ button.btn-order-outline:hover,
   .footer-inner {
     flex-direction: column;
     gap: 25px;
+    padding-left: 0;
   }
 
   .footer-left {
