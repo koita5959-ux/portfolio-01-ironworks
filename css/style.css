@@ -839,6 +839,11 @@ ul {
   color: #ffffff;
 }
 
+.footer-sns img {
+  width: 40px;
+  height: 40px;
+}
+
 .footer-privacy {
   color: #999999;
   font-size: 0.85rem;
