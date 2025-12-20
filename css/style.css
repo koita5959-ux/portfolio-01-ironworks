@@ -1180,6 +1180,45 @@ ul {
   color: #ffffff;
 }
 
+.catalog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.btn-cart-link,
+.btn-checkout {
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-cart-link {
+  background-color: #ffffff;
+  color: #333333;
+  border: 2px solid #333333;
+}
+
+.btn-cart-link:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.btn-checkout {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  border: 2px solid #2c2c2c;
+}
+
+.btn-checkout:hover {
+  background-color: #1a1a1a;
+  border-color: #1a1a1a;
+}
+
 .catalog-category.hidden {
   display: none;
 }
