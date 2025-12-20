@@ -1408,13 +1408,15 @@ ul {
   line-height: 1.5;
 }
 
-.checkbox-label input {
+.checkbox-label input,
+.order-form .form-group.checkbox-group .checkbox-label input {
   flex-shrink: 0;
   width: 18px;
   height: 18px;
   margin: 0;
   margin-right: 10px;
   margin-top: 2px;
+  padding: 0;
   accent-color: #2c2c2c;
   cursor: pointer;
 }
