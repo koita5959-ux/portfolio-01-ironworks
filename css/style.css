@@ -319,6 +319,35 @@ ul {
   margin-top: 40px;
 }
 
+.work-block {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.work-block-image {
+  flex-shrink: 0;
+  width: 300px;
+}
+
+.work-block-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.work-block-text {
+  flex: 1;
+}
+
+.work-block-text p {
+  color: #4a4a4a;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
 .works-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
