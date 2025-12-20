@@ -808,14 +808,14 @@ ul {
 }
 
 .footer-inner {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   display: flex;
-  gap: 30px;
+  gap: 60px;
 }
 
 .footer-left {
-  flex: 0 0 35%;
+  flex: 0 0 200px;
   color: #cccccc;
   font-size: 0.9rem;
   line-height: 1.8;
@@ -830,8 +830,8 @@ ul {
 }
 
 .footer-right {
-  flex: 0 0 65%;
-  text-align: right;
+  flex: 1;
+  text-align: center;
 }
 
 .footer-brand {
@@ -843,7 +843,7 @@ ul {
 
 .footer-sns {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 12px;
   margin-bottom: 15px;
 }
@@ -875,7 +875,7 @@ ul {
 
 .footer-contact {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 10px;
   margin-bottom: 15px;
 }
