@@ -706,14 +706,14 @@ ul {
 }
 
 .btn-outline {
-  background-color: transparent;
-  color: #ffffff;
-  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border: 2px solid #1a1a1a;
+  transition: transform 0.2s ease;
 }
 
 .btn-outline:hover {
-  background-color: #ffffff;
-  color: #1a1a1a;
+  transform: translate(2px, 2px);
 }
 
 /* ========================================
@@ -1396,6 +1396,7 @@ ul {
 
 .checkbox-group {
   margin-top: 30px;
+  padding-left: 0;
 }
 
 .checkbox-label {
@@ -1454,9 +1455,9 @@ ul {
 }
 
 .btn-order-outline:hover {
-  background-color: #f5f5f5;
-  color: #333;
-  border-color: #666;
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+  border-color: #1a1a1a !important;
 }
 
 .btn-large {
