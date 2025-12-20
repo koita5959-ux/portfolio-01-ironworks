@@ -338,7 +338,7 @@ ul {
 .work-block {
   display: flex;
   align-items: center;
-  gap: 0;
+  gap: 15px;
   margin-bottom: 60px;
 }
 
