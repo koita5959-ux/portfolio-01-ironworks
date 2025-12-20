@@ -828,21 +828,19 @@ ul {
   margin-bottom: 20px;
 }
 
-.sns-link {
-  color: #cccccc;
-  font-size: 0.9rem;
+.footer-sns a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/sns.JPG');
+  background-repeat: no-repeat;
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
-.sns-link:hover {
-  color: #ffffff;
-}
-
-.footer-sns img {
-  width: 40px;
-  height: 40px;
-}
+.sns-facebook { background-position: 0 0; }
+.sns-instagram { background-position: -50px 0; }
+.sns-x { background-position: -100px 0; }
+.sns-line { background-position: -150px 0; }
 
 .footer-privacy {
   color: #999999;
