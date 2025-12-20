@@ -233,6 +233,8 @@ ul {
 .services {
   padding: 100px 0;
   background-color: #f5f5f5;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
 }
 
 .services-grid {
@@ -289,7 +291,7 @@ ul {
 ======================================== */
 .works {
   padding: 100px 0;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
 }
 
 .works-box {
