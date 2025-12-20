@@ -311,6 +311,14 @@ ul {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
+.works-footer {
+  text-align: center;
+  color: #4a4a4a;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-top: 40px;
+}
+
 .works-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
