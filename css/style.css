@@ -188,6 +188,34 @@ ul {
   margin: 15px auto 0;
 }
 
+.page-title-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.page-title-header .section-title {
+  margin-bottom: 0;
+}
+
+.page-title-link {
+  color: #666666;
+  font-size: 0.95rem;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.page-title-link:hover {
+  color: #333333;
+  border-color: #333333;
+  background-color: #f5f5f5;
+}
+
 /* ========================================
    セクション2: 私たちについて
 ======================================== */
